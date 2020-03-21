@@ -50,6 +50,7 @@ extern "C" {
 #endif
 
 #ifdef ALUT_STATIC
+ #undef ALUT_API
  #define ALUT_API 
 #endif
 
