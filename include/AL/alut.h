@@ -49,6 +49,10 @@ extern "C" {
 #define ALUT_ATTRIBUTE_DEPRECATED
 #endif
 
+#ifdef ALUT_STATIC
+ #define ALUT_API 
+#endif
+
 #define ALUT_API_MAJOR_VERSION                 1
 #define ALUT_API_MINOR_VERSION                 1
 
