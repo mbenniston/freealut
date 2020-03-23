@@ -87,7 +87,7 @@ extern "C" {
 #define ALUT_LOADER_MEMORY                     0x301
 
 ALUT_API ALboolean ALUT_APIENTRY alutInit ();
-ALUT_API ALboolean ALUT_APIENTRY alutInitWithoutContext (int *argcp, char **argv);
+ALUT_API ALboolean ALUT_APIENTRY alutInitWithoutContext ();
 ALUT_API ALboolean ALUT_APIENTRY alutExit (void);
 
 ALUT_API ALenum ALUT_APIENTRY alutGetError (void);

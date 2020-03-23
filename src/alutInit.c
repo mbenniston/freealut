@@ -87,17 +87,11 @@ ALUT_APIENTRY alutInit ()
 }
 
 ALUT_API ALboolean
-ALUT_APIENTRY alutInitWithoutContext (int *argcp, char **argv)
+ALUT_APIENTRY alutInitWithoutContext ()
 {
   if (initialisationState != Unintialized)
     {
       _alutSetError (ALUT_ERROR_INVALID_OPERATION);
-      return AL_FALSE;
-    }
-
-  if ((argcp == NULL) != (argv == NULL))
-    {
-      _alutSetError (ALUT_ERROR_INVALID_VALUE);
       return AL_FALSE;
     }
 
