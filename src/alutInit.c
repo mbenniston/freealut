@@ -47,7 +47,7 @@ _alutSanityCheck (void)
 }
 
 ALUT_API ALboolean
-ALUT_APIENTRY alutInit (int *argcp, char **argv)
+ALUT_APIENTRY alutInit ()
 {
   ALCdevice *device;
   ALCcontext *context;
@@ -55,12 +55,6 @@ ALUT_APIENTRY alutInit (int *argcp, char **argv)
   if (initialisationState != Unintialized)
     {
       _alutSetError (ALUT_ERROR_INVALID_OPERATION);
-      return AL_FALSE;
-    }
-
-  if ((argcp == NULL) != (argv == NULL))
-    {
-      _alutSetError (ALUT_ERROR_INVALID_VALUE);
       return AL_FALSE;
     }
 

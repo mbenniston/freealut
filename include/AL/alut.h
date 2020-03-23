@@ -86,7 +86,7 @@ extern "C" {
 #define ALUT_LOADER_BUFFER                     0x300
 #define ALUT_LOADER_MEMORY                     0x301
 
-ALUT_API ALboolean ALUT_APIENTRY alutInit (int *argcp, char **argv);
+ALUT_API ALboolean ALUT_APIENTRY alutInit ();
 ALUT_API ALboolean ALUT_APIENTRY alutInitWithoutContext (int *argcp, char **argv);
 ALUT_API ALboolean ALUT_APIENTRY alutExit (void);
 
